@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "lts/*"
+cache:
+  directories:
+    - ~/.npm
+    - ~/.cache
+
+jobs:
+  include:
+    - stage: tests
+      script: npm test
+
