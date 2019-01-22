@@ -14,5 +14,5 @@ jobs:
      script:
   
        - docker pull backstopjs/backstopjs
-       - docker run -d -p backstopjs/backstopjs  -c "src backstopjs/backstopjs; bundle exec reference; bundle exec test"
+       - docker run -d backstopjs/backstopjs  -c "src backstopjs/backstopjs; bundle exec reference; bundle exec test"
        
