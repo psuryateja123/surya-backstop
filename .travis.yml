@@ -5,12 +5,5 @@ cache:
  directories:
    - ~/.npm
    - ~/.cache
-   
-jobs:
- include:
-   - stage: tests
-     before_install:npm start
-     script:
-       - docker build -t backstopjs/backstopjs
-       - docker run -v ./tests/backstop:/src backstop:test
+
  
