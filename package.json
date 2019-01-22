@@ -1,7 +1,7 @@
 {
-  "name": "nhsuk-frontend",
+  "name": "surya-backstop",
   "version": "0.8.0",
-  "description": "The NHS website frontend styles, for creating NHS websites and services.",
+  "description": "its a sample",
   "sasslintConfig": "config/sass-lint.yml",
   "scripts": {
     "prepare": "gulp bundle",
@@ -31,7 +31,7 @@
     "del": "^3.0.0",
     "eslint": "^5.11.1",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-nhsuk": "^0.16.0",
+   
     "eslint-plugin-import": "^2.14.0",
     "gulp": "^4.0.0",
     "gulp-clean": "^0.4.0",
