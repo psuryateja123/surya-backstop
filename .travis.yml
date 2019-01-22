@@ -6,4 +6,12 @@ cache:
    - ~/.npm
    - ~/.cache
 
+
+   
+jobs:
+ include:
+   - stage: tests
+     script:
+       - docker build -t backstopjs/backstopjs
+       - docker run -v ./tests/backstop:/src backstop:test
  
