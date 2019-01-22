@@ -13,5 +13,4 @@ jobs:
    - stage: tests
      script:
      
-       - docker run -d backstopjs/backstopjs  -c "src backstopjs/backstopjs;bundle exec test"
-       
+       - docker run backstopjs/backstopjs -v tests/backstop:/src test
