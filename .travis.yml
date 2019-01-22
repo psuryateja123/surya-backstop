@@ -13,4 +13,5 @@ jobs:
    - stage: tests
      script:
         - docker run backstopjs/backstopjs -v tests/backstop:/src test
-        - docker run backstopjs/backstopjs -v tests/backstop:/src npm test 
+        - docker run backstopjs/backstopjs -v tests/backstop:/src npm test
+        - npm run backstop:test
