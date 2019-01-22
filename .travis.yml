@@ -12,6 +12,5 @@ jobs:
  include:
    - stage: tests
      script:
-        - docker run backstopjs/backstopjs -v tests/backstop:/src test
-        - docker run backstopjs/backstopjs -v tests/backstop:/src npm test
-        - npm run backstop:test
+        - docker run backstopjs/backstopjs -v tests/backstop:/src test /bin/sh -c "cd /root/test; bundle exec npm run backstop:test;"
+       
