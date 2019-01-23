@@ -13,5 +13,5 @@ jobs:
    - stage: tests
      script:
         
-        - docker run -v $(pwd)/tests:/src backstopjs/backstopjs test
+        - docker run -p 127.0.0.1:80:3000 -v $(pwd)/tests:/src backstopjs/backstopjs test
         - docker ps -a
