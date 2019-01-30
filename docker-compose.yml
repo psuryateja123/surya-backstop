@@ -9,6 +9,3 @@ version: '2.1'
     links:
     - base-app
 
-    script:
-    - npm run backstop:test
-    - xvfb-run --server-args="-screen 0 1024x768x24" make test && npm run backstop:report
