@@ -4,10 +4,10 @@
   "description": "its a sample",
   "sasslintConfig": "config/sass-lint.yml",
   "scripts": {
-    "backstop:ref": "backstop reference --docker --config= */backstop.json",
-    "backstop:test": "backstop test --docker --config= */backstop.json",
+    "backstop:ref": "backstop reference --docker --config= tests/backstop.json",
+    "backstop:test": "backstop test --docker --config= tests/backstop.json",
     "backstop:clean": "rm -rf tests/backstop/backstop_data/bitmaps_test/*",
-    "backstop:report": "backstop openReport --docker --config= */backstop.json"
+    "backstop:report": "backstop openReport --docker --config= tests/backstop.json"
   },
   "dependencies": {
     "accessible-autocomplete": "^1.6.2",
