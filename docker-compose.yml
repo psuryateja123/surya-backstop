@@ -6,6 +6,5 @@ version: '2.1'
     image: "backstopjs/backstopjs"
     volumes:
     - ./:/src
-    links:
-    - base-app
+
 
