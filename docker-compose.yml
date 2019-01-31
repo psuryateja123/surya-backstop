@@ -1,10 +1,9 @@
 version: '2.1'
 
   services:
-
-  backstop:
-    image: "backstopjs/backstopjs"
-    volumes:
-    - ./:/src
+    backstop:
+      image: "backstopjs/backstopjs"
+      volumes:
+        - ./:/src
 
 
