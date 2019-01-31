@@ -5,7 +5,7 @@
   "sasslintConfig": "config/sass-lint.yml",
   "scripts": {
     "backstop:ref": "docker-compose run backstop reference --config= tests/backstop.json",
-    "backstop:test": "docker-compose run backstop test --config= tests/backstop.json",
+    "backstop:test": "docker-compose run backstop test --config=tests/backstop.json",
     "backstop:clean": "rm -rf tests/backstop/backstop_data/bitmaps_test/*",
     "backstop:report": "backstop openReport --docker --config= tests/backstop.json"
   },
