@@ -13,6 +13,3 @@ jobs:
    - stage: tests
      script:
         - npm run backstop:test
-
-        after_failure:
-        
