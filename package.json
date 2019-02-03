@@ -4,13 +4,15 @@
   "description": "its a sample",
   "sasslintConfig": "config/sass-lint.yml",
   "scripts": {
-    "backstop:ref": "docker-compose run backstop reference --config= tests/backstop.json",
+    "backstop:ref": "docker-compose run backstop reference --config= tests/backstop.json && npm run azure_upload.js",
     "backstop:test": "docker-compose run backstop test --config=tests/backstop.json",
     "backstop:clean": "rm -rf tests/backstop/backstop_data/bitmaps_test/*",
     "backstop:report": "backstop openReport --docker --config= tests/backstop.json"
   },
   "dependencies": {
     "accessible-autocomplete": "^1.6.2",
+    "azure-blob-storage": "^3.0.0",
+    "azure-storage": "^2.10.2",
     "backstop": "^1.0.1",
     "sass-mq": "^4.0.2"
   },
