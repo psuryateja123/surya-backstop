@@ -6,11 +6,16 @@ const containerName = "backstopimages";
 const containerURL = ContainerURL.fromServiceURL(serviceURL, containerName);
 const aborter = Aborter.timeout(30 * ONE_MINUTE);
 const filePath = "tests/";
-
 const content = "hello!";
 const fileName = "test.txt";
+const serviceURL = new ServiceURL(
+    // When using AnonymousCredential, following url should include a valid SAS or support public access
+    `https://${backstop}.blob.core.windows.net/backstopimages`,
+    pipeline
+);
 
 async function uploadLocalFile(aborter, containerURL, filePath) {
+
 
     filePath = path.resolve(filePath);
 
